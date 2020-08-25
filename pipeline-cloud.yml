@@ -42,7 +42,7 @@ jobs:
           echo.
           echo "*** Build DocFx site ***"
           echo.
-          docfx.exe ./docfx.json
+          docfx.exe build ./docfx.json
           echo.
           echo "*** Contents of _site ***"
           echo.
