@@ -37,7 +37,7 @@ jobs:
           cd source
           git clone -b master https://user:$(gitToken)@github.com/$(gitOwner)/$(gitRepoName).git --recurse-submodules
           dir
-          cd $(gitRepoName)
+          cd $(gitRepoName)\docfx_project
           dir
           echo.
           echo "*** Build DocFx site ***"
@@ -46,11 +46,11 @@ jobs:
           echo.
           echo "*** Build DocFx PDF ***"
           echo.
-          docfx.exe pdf ./docfx_pdf.json
+          docfx.exe pdf ./docfx.json
           echo.
           echo "*** Contents of _site ***"
           echo.
-          dir "C:\source\$(gitRepoName)\_site"
+          dir "C:\source\$(gitRepoName)\docfx_project\_site"
           echo.
           echo "Complete"
           echo.
