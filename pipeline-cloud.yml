@@ -55,7 +55,7 @@ jobs:
 
       - task: PublishBuildArtifacts@1
         inputs:
-          PathtoPublish: 'C:\source\$(gitRepoName)\_site'
+          PathtoPublish: 'C:\source\$(gitRepoName)\docfx_project\_site'
           ArtifactName: 'drop'
           publishLocation: 'Container'
 
