@@ -80,4 +80,4 @@ jobs:
           Destination: 'AzureBlob'
           storage: 'petersandbox1'
           ContainerName: '$web'
-          BlobPrefix: 'en-test/$(gitRepoName)'
+          BlobPrefix: 'en/$(gitRepoName)'
