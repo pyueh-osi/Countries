@@ -10,8 +10,8 @@ Write-Host "Building PDF..."
 docfx pdf docfx.json
 
 
-# Copy our pdf to the _site and rename
+# Copy our pdf to the _site
 
-copy .\_site_pdf\docfx_project_pdf.pdf .\_site\Countries.pdf
+copy .\_site_pdf\*.pdf .\_site
 
 
