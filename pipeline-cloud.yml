@@ -1,10 +1,10 @@
 # DevOps pipeline for Azure cloud deployment
 
-trigger:
-  batch: false
-  branches:
-    include:
-      - master
+trigger: none
+#  batch: false
+#  branches:
+#    include:
+#      - master
 
 variables:
   - group: product-readiness.docfx
