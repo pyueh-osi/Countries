@@ -16,15 +16,16 @@ variables:
 jobs:
   - job: Publish
     pool:
-      name: 00-OSIManaged-Containers
-      demands: AgentType -equals osimanagedagent
+      # name: 00-OSIManaged-Containers
+      # demands: AgentType -equals osimanagedagent
+      vmImage: 'vs2017-win2016'
     steps:
-      # - script: |
-      #    choco install DocFX --version=2.56.2
-      #  displayName: 'Install DocFX 2.56.2'
-      # - script: |
-      #    choco install wkhtmltopdf --version=0.12.5
-      #  displayName: 'Install wkhtmltopdf 0.12.5'
+      - script: |
+          choco install DocFX --version=2.56.2
+        displayName: 'Install DocFX 2.56.2'
+      - script: |
+          choco install wkhtmltopdf --version=0.12.5
+        displayName: 'Install wkhtmltopdf 0.12.5'
 
       - script: |
           echo.
