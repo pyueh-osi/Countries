@@ -70,7 +70,7 @@ jobs:
           azureSubscription: 'PYueh-Visual Studio Enterprise Subscription(94e67d6d-a3e6-425f-b9af-16971682c94c)'
           scriptType: 'ps'
           scriptLocation: 'inlineScript'
-          inlineScript: 'az storage blob delete-batch --source "`$web" --account-name "petersandbox1" --pattern "en-test/$(gitRepoName)/*"'
+          inlineScript: 'az storage blob delete-batch --source "`$web" --account-name "petersandbox1" --pattern "en/$(gitRepoName)/*"'
 
       - task: AzureFileCopy@4
         inputs:
