@@ -45,6 +45,11 @@ jobs:
           echo.
           docfx.exe build ./docfx.json
           echo.
+          echo "*** Build PDF ***"
+          echo.
+          docfx.exe pdf ./docfx.json
+          copy _site_pdf\*.pdf _site
+          echo.
           echo "*** Contents of _site ***"
           echo.
           dir "C:\source\$(gitRepoName)\docfx_project\_site"
