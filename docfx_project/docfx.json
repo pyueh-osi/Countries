@@ -79,6 +79,7 @@
   },
   "pdf": {
     "noStdin": true,
+    "name": "Countries",
     "content": [
       {
         "files": [
@@ -137,7 +138,7 @@
     "dest": "_site_pdf",
     "template": [
       "pdf.default",
-      "templates/pdf"
+      "templates/pdf.mytemplate"
     ]
 
   }
