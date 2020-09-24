@@ -4,7 +4,7 @@ The United Kingdom consists of England, Scotland, Wales, and Northern Ireland.  
 
 ## London
 
-London is the capital of the UK and is one of world's most important cities.
+London is the capital of the UK and is one of world's most important cities.  Queen Elizabeth II lives in Buckingham Palace.
 
 ## Liverpool
 
