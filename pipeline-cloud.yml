@@ -1,10 +1,13 @@
 # DevOps pipeline for Azure cloud deployment
+# Local changes
 
 trigger: none
 #  batch: false
 #  branches:
 #    include:
 #      - master
+
+# Some other changes blah blah
 
 variables:
   - group: product-readiness.docfx
