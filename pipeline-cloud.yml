@@ -1,4 +1,5 @@
 # DevOps pipeline for Azure cloud deployment
+# More comments
 
 trigger: none
 #  batch: false
