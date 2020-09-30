@@ -1,10 +1,10 @@
 # Spain
 
-Spain is in western Europe on the Iberian peninsula.
+Spain is in western Europe on the Iberian peninsula.  The official name of the country is **Kingdom of Spain**.
 
 ## Madrid
 
-Madrid is the capital and most populous city of Spain.
+Madrid is the capital and most populous city of Spain.  It is the second-largest city in the European Union.
 
 ## Barcelona
 
