@@ -7,7 +7,7 @@
       <ul class="nav">
         {{#docurl}}
         <li>
-          <a href="{{issueUrl}}?title={{issueTitle}}&body={{issueBody}}{{cleandocurl}}" target="_blank" class="contribution-link">{{__global.improveThisDoc}}</a>
+          <a href="{{issueUrl}}?title={{issueTitle}}&body={{issueBody}}" target="_blank" class="contribution-link">{{__global.improveThisDoc}}</a>
         </li>
         {{/docurl}}
         {{#sourceurl}}

@@ -24,6 +24,14 @@ exports.transform = function (model) {
 
   model.cleandocurl = pos < 0 ? model.docurl : model.docurl.substring(0, pos);
 
+  // Inject the cleandocurl into title or body, if specified in title or body template
+  // Note that replaceAll() is not supported.
+
+  const regex = /{{issueDocUrl}}/gi;
+
+  model.issueTitle = model.issueTitle && model.issueTitle.replace(regex, model.cleandocurl);
+  model.issueBody = model.issueBody && model.issueBody.replace(regex, model.cleandocurl);
+
   if (extension && extension.postTransform) {
     model = extension.postTransform(model);
   }
