@@ -24,13 +24,22 @@ exports.transform = function (model) {
 
   model.cleandocurl = pos < 0 ? model.docurl : model.docurl.substring(0, pos);
 
+  // Replace "{{doc.xyz}} tokens with xyz metadata value in document
+  // Unfortunately DocFx doesn't seem to support this agnostic syntax:
+  // const reToken = /{{doc\.(.*)}}/g;
+  // model.issueBody =  model.issueBody.replace(reToken, '$1');
+
+  // So we're stuck with naming the tokens explicitly
+  var reToken = /{{doc\.title}}/gi;
+  model.issueTitle =  model.issueTitle.replace(reToken, model.title);
+  model.issueBody =  model.issueBody.replace(reToken, model.title);
+
   // Inject the cleandocurl into title or body, if specified in title or body template
   // Note that replaceAll() is not supported.
 
-  const regex = /{{issueDocUrl}}/gi;
-
-  model.issueTitle = model.issueTitle && model.issueTitle.replace(regex, model.cleandocurl);
-  model.issueBody = model.issueBody && model.issueBody.replace(regex, model.cleandocurl);
+  reToken = /{{issueDocUrl}}/gi;
+  model.issueTitle = model.issueTitle && model.issueTitle.replace(reToken, model.cleandocurl);
+  model.issueBody = model.issueBody && model.issueBody.replace(reToken, model.cleandocurl);
 
   if (extension && extension.postTransform) {
     model = extension.postTransform(model);
