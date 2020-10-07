@@ -69,11 +69,9 @@
       "_appTitle": "Countries",
       "_enableSearch": true,
       "_gitUrlPattern": "my-git-url-pattern",
-      "issueUrl": "https://github.com/pyueh-osi/Countries/issues/new",
+      "issueLink": "https://github.com/pyueh-osi/Countries/issues/new?title={{issueTitle}}&body={{issueBody}}",
       "issueTitle": "Feedback on {{doc.title}}",
-      "xx_issueBody": "Dear OSIsoft, you have a **wonderful** team of writers!%0A%0AReferring page:%0A{{issueDocUrl}}%0AHave a nice day!%0A{{issueDocUrl}} again!",
-      "issueBody": "_How can we make this documentation better? We value your feedback and use it to improve the content._%0A%0A%0A*******%0A**Do not edit this section. We need it to link the issue to the document on OCS-docs.**%0A- **URL:** {{issueDocUrl}}%0A- **Topic name:** {{doc.title}}%0A- **Issue submitted on:** {{issueDate}}"
-
+      "issueBody": "_How can we make this documentation better? We value your feedback and use it to improve the content._%0A%0A%0A%0A*******%0A**Do not edit this section. We need it to link the issue to the document on OCS-Docs.**%0A- **URL**: {{issueDocUrl}}%0A- **Topic name**: {{doc.title}}%0A- **Issue submitted on**: {{issueDate}}"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
