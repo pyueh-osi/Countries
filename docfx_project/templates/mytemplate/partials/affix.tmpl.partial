@@ -7,7 +7,7 @@
       <ul class="nav">
         {{#docurl}}
         <li>
-          <a href="{{issueUrl}}?title={{issueTitle}}&body={{issueBody}}{{cleandocurl}}" target="_blank" class="contribution-link">{{__global.improveThisDoc}}</a>
+          <a id="idIssueLink" target="_blank" href="{{docurl}}" class="contribution-link">{{__global.improveThisDoc}}</a>
         </li>
         {{/docurl}}
         {{#sourceurl}}
@@ -23,3 +23,12 @@
     </nav>
   </div>
 </div>
+<script>
+  function getTimeStamp() {
+    var now = new Date();
+    return now.getMonth()+1 + '/' + now.getDate() + '/' + now.getFullYear().toString().substr(2,2);
+  }
+  var issueLinkElem = document.getElementById("idIssueLink");
+  var href = "{{issueLink}}";
+  issueLinkElem.href = href.replace('\{\{issueDate\}\}', getTimeStamp());
+</script>

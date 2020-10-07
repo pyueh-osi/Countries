@@ -1,3 +1,9 @@
+---
+uid: Spain Page
+tok1: ES Value1
+tok2: ES Value2
+---
+
 # Spain
 
 Spain is in western Europe on the Iberian peninsula.  The official name of the country is **Kingdom of Spain**.

@@ -1,3 +1,9 @@
+---
+uid: Germany Page
+tok1: DE Value1
+tok2: DE Value2
+---
+
 # Germany
 
 The Federal Republic of Germany has the highest GDP in Europe and fifth highest in the world.  Its population is about 83 million.
