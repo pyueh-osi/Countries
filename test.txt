@@ -1,0 +1,16 @@
+ Volume in drive C is Windows
+ Volume Serial Number is 0E62-42C0
+
+ Directory of C:\Code\GitHub\pyueh-osi\Countries\update-files
+
+12/10/2020  03:27 PM    <DIR>          .
+12/10/2020  03:27 PM    <DIR>          ..
+12/10/2020  03:27 PM    <DIR>          .git
+12/10/2020  03:26 PM    <DIR>          .github
+12/10/2020  03:26 PM    <DIR>          docfx_project
+12/10/2020  03:26 PM             1,556 azure-pipelines.yml
+12/10/2020  03:26 PM             2,603 pipeline-cloud.yml
+12/10/2020  03:26 PM                78 Readme.md
+12/10/2020  03:27 PM                 0 test.txt
+               4 File(s)          4,237 bytes
+               5 Dir(s)  696,736,968,704 bytes free
