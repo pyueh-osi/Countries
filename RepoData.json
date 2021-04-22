@@ -1,0 +1,28 @@
+{
+    "project": {
+        "translationStatusInfo": "not-translated, translated, or pending",
+        "translationStatus": "not-translated"
+
+    },
+
+    "source": {
+        "branchInfo": "Branch of English version to translate",
+        "branch": "",
+    
+        "translateCommitInfo": "The commit hash of English version to translate",
+        "translateCommit": "",
+    
+        "prevTranslateCommitInfo": "The commit hash of previously translated English version",
+        "prevTranslateCommit": "",
+    
+        "modifiedFilesInfo": "The modified files between prevTranslateCommit and translateCommitInfo as reported by git: m, a, d, r",
+        "modifiedFiles": [
+            {
+                "name": "foo.md",
+                "status": "m"
+            }
+        ]
+    }
+
+    
+}
